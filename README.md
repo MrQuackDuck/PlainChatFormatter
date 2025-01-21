@@ -13,7 +13,7 @@
 ## 📄 Default config
 
 ```yml
-# Custom colors are supported( (e.g.: &#FFFFFF)
+# Custom colors are supported (e.g.: &#FFFFFF)
 # Note: If you want your [prefix] and [suffix] to work, you should install Vault: https://dev.bukkit.org/projects/vault
 format: "[prefix]&#CBD5E1[name][suffix]: &f[message]"
 ```
