@@ -10,11 +10,19 @@
 
 **[Vault](https://dev.bukkit.org/projects/vault)** is supported, but is **not required** for the plugin to work.<br>
 
+## 📄 Default config
+
+```yml
+# Custom colors are supported( (e.g.: &#FFFFFF)
+# Note: If you want your [prefix] and [suffix] to work, you should install Vault: https://dev.bukkit.org/projects/vault
+format: "[prefix]&#CBD5E1[name][suffix]: &f[message]"
+```
+
 ## 🤔 Why did I do this plugin?
 
 The plugin is very similar to [VaultChatFormatter](https://www.spigotmc.org/resources/vaultchatformatter.49016/) and [LPC](https://www.spigotmc.org/resources/lpc-chat-formatter-1-7-10-1-20.68965/), but they both aren't compatible with features of Paper [Components](https://docs.papermc.io/paper/dev/component-api/introduction).
 
-For reference, the [VaultChatFormatter](https://www.spigotmc.org/resources/vaultchatformatter.49016/) formatted messages in [AsyncPlayerChatEvent](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/AsyncPlayerChatEvent.html) instead of [AsyncChatEvent](https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/player/AsyncChatEvent.html) which caused some problems. **In my case**, one of my plugins was setting **a hover effect** on chat messages, but it **didn't work** due to the implementation of those chat formatters.
+For reference, the [VaultChatFormatter](https://www.spigotmc.org/resources/vaultchatformatter.49016/) formats messages in [AsyncPlayerChatEvent](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/AsyncPlayerChatEvent.html) instead of [AsyncChatEvent](https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/player/AsyncChatEvent.html) which cause some problems. **In my case**, one of my plugins was setting **a hover effect** on chat messages, but it **didn't work** due to the implementation of those chat formatters.
 
  ## 💻 Commands
 
@@ -24,19 +32,11 @@ For reference, the [VaultChatFormatter](https://www.spigotmc.org/resources/vault
 
 - `plainchatformatter.admin` _(for **operators** by default)_ — Allows to use `/plainchatformatter reload`.
 
-## 📄 Default config
-
-```yml
-# Custom colors are supported( (e.g.: &#FFFFFF)
-# Note: If you want your [prefix] and [suffix] to work, you should install Vault: https://dev.bukkit.org/projects/vault
-format: "[prefix]&#CBD5E1[name][suffix]: &f[message]"
-```
-
 ## 🚀 Installation guide
 
 > [!IMPORTANT]
 > Before getting started, make sure that the plugin's version is **compatible** with your server version.
 
 1. Download the latest version of the plugin from the <a href="https://github.com/MrQuackDuck/PlainChatFormatter/releases">Releases</a> tab.
-1. Put downloaded `.jar` into `/plugins` folder of your server.
-1. Restart your server or enter `reload` command.
+1. Put the downloaded `.jar` into the `/plugins` folder of your server.
+1. Restart your server or enter the `/reload` command.
