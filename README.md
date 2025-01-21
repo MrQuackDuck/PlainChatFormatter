@@ -18,7 +18,7 @@
 format: "[prefix]&#CBD5E1[name][suffix]: &f[message]"
 ```
 
-## 🤔 Why did I do this plugin?
+## 🤔 Why did I make this plugin?
 
 The plugin is very similar to [VaultChatFormatter](https://www.spigotmc.org/resources/vaultchatformatter.49016/) and [LPC](https://www.spigotmc.org/resources/lpc-chat-formatter-1-7-10-1-20.68965/), but they both aren't compatible with features of Paper [Components](https://docs.papermc.io/paper/dev/component-api/introduction).
 
