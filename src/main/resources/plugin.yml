@@ -1,0 +1,16 @@
+name: PlainChatFormatter
+version: '${project.version}'
+main: mrquackduck.plainchatformatter.PlainChatFormatterPlugin
+api-version: '1.16'
+
+commands:
+  plainchatformatter:
+    permission: plainchatformatter.admin
+    description: The PlainChatFormatter command
+    aliases:
+      - pcf
+
+permissions:
+  plainchatformatter.admin:
+    default: op
+    description: Allows to use /pcf reload command
