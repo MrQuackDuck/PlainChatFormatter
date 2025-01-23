@@ -53,8 +53,6 @@ public class SendMessageListener implements Listener, ChatRenderer {
                 .replacement(message)
                 .build();
 
-        plugin.getLogger().info(formatComponent.content());
-
         return formatComponent
                 .replaceText(prefixReplacementConfig)
                 .replaceText(nameReplacementConfig)
