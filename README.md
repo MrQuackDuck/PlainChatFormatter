@@ -22,7 +22,7 @@ format: "[prefix]&#CBD5E1[name][suffix]: &f[message]"
 
 The plugin is very similar to [VaultChatFormatter](https://www.spigotmc.org/resources/vaultchatformatter.49016/) and [LPC](https://www.spigotmc.org/resources/lpc-chat-formatter-1-7-10-1-20.68965/), but they both aren't compatible with features of Paper [Components](https://docs.papermc.io/paper/dev/component-api/introduction).
 
-For reference, the [VaultChatFormatter](https://www.spigotmc.org/resources/vaultchatformatter.49016/) formats messages in [AsyncPlayerChatEvent](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/AsyncPlayerChatEvent.html) instead of [AsyncChatEvent](https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/player/AsyncChatEvent.html) which cause some problems. **In my case**, one of my plugins was setting **a hover effect** on chat messages, but it **didn't work** due to the implementation of those chat formatters.
+For reference, the [VaultChatFormatter](https://www.spigotmc.org/resources/vaultchatformatter.49016/) formats messages in [AsyncPlayerChatEvent](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/AsyncPlayerChatEvent.html) instead of [AsyncChatEvent](https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/player/AsyncChatEvent.html) which causes some problems. **In my case**, one of my plugins was setting **a hover effect** on chat messages, but it **didn't work** due to the implementation of those chat formatters.
 
 This plugin **solves this problem**.\
 It **formats** chat messages **without breaking** their **content** (e.g., hoverable, clickable messages etc.). 
